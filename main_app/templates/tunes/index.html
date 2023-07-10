@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Index Page</h2>
+{% for tune in tunes %}
+  <div class="card">
+    <div class="card-content">
+      <span class="card-title">Name {{ tune.name }}</span>
+      <p>Key: {{ tune.key }}</p>
+      <p>Fiddler: {{ tune.fiddler }}</p>
+    </div>
+  </div>
+{% endfor %}
+
+{% endblock %}
