@@ -1,3 +1,48 @@
 body {
     background-color: rgb(146, 146, 234);
+    margin: 0 auto;
 }
+
+h2 {
+    text-align: center;
+}
+
+#nav-bar {
+    display: flex;
+    gap: 5vmin;
+    margin-left: 5vmin;
+    width: 100%;
+    justify-content: center;
+}
+
+#nav-bar > a {
+    text-decoration: none;
+    color: white;
+    font-size: 4vmin;
+    padding: 1vmin;
+}
+
+#nav-bar > hover {
+    color: rgb(162, 159, 159);
+    cursor: pointer;
+}
+
+.container {
+    width: 100vmin;
+    background-color: rgb(146, 146, 234);
+    margin: 0 auto;
+}
+
+
+
+
+/* INDEX */
+
+.card {
+    background-color: lightslategray;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1vmin;
+    margin-bottom: 1vmin;
+}
+
