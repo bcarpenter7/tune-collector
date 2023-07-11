@@ -6,15 +6,16 @@
 {% else %}
     <h1>Add Tune</h1>
 {% endif %}
+<div id="containerForm">
 <form action="" method="POST">
     {% csrf_token %}
-    <table>
-
-        {{ form.as_table }}
-    </table>
+    <div id="tableForm">
+        {{ form}}
+    </div>
     <input type="submit" value="Submit!" class="btn">
 
 </form>
+</div>
 
 
 

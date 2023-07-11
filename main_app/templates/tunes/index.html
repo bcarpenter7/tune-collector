@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h2>Index Page</h2>
+<h2>All Tunes</h2>
 {% for tune in tunes %}
 <a href="{% url 'detail' tune.id %}">
   <div class="card">
     <div class="card-content">
-      <span class="card-title">Name {{ tune.name }}</span>
+      <span class="card-title">Name: {{ tune.name }}</span>
       <p>Key: {{ tune.key }}</p>
       <p>Fiddler: {{ tune.fiddler }}</p>
     </div>
