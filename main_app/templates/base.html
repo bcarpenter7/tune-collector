@@ -11,8 +11,9 @@
 <body>
     <nav id="nav-bar">
     <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/tunes">View all my tunes</a>
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'tunes_create' %}">Add a Tune!</a>
+    <a href="{% url 'index' %}">View all my tunes</a>
     </ul>
     </nav>
 
