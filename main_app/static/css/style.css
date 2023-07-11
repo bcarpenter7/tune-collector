@@ -62,6 +62,17 @@ h2 {
 
 /* INDEX */
 
+#keyChange {
+    margin-top: 7vmin;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+#keyChange > * {
+    display: inline-flex;
+}
 a:link {
     text-decoration: none;
 }
