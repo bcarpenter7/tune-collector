@@ -12,7 +12,7 @@ def about(request):
     return render(request, 'about.html' )
 
 def tunes_index(request):
-    tunes = Tune.objects.all()
+    tunes = Tune.objects.order_by('name')
     return render(request, 'tunes/index.html', {
         'tunes': tunes
     })
