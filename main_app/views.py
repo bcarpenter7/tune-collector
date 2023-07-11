@@ -19,32 +19,33 @@ def tunes_index(request):
     })
 
 def tunes_index_d(request):
-    tunes = Tune.objects.filter(key='D')
+    tunes = Tune.objects.filter(key='D').order_by('name')
     return render(request, 'tunes/index.html', {
         'tunes': tunes,
         'title': 'D'
     })
 
 def tunes_index_a(request):
-    tunes = Tune.objects.filter(key='A')
+    tunes = Tune.objects.filter(key='A').order_by('name')
     return render(request, 'tunes/index.html', {
         'tunes': tunes,
         'title': 'A'
     })
 
 def tunes_index_g(request):
-    tunes = Tune.objects.filter(key='G')
+    tunes = Tune.objects.filter(key='G').order_by('name')
     return render(request, 'tunes/index.html', {
         'tunes': tunes,
         'title': 'G'
     })
 
 def tunes_index_c(request):
-    tunes = Tune.objects.filter(key='C')
+    tunes = Tune.objects.filter(key='C').order_by('name')
     return render(request, 'tunes/index.html', {
         'tunes': tunes,
         'title': 'C'
     })
+
 
 def tunes_detail(request, tune_id):
     tune = Tune.objects.get(id=tune_id)

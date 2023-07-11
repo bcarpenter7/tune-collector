@@ -66,8 +66,14 @@ h2 {
     margin-top: 7vmin;
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     justify-content: space-between;
+}
+
+#keyChange > a {
+    background-color: white;
+    border-radius: 2px;
+    padding: 4px;
 }
 
 #keyChange > * {
