@@ -78,5 +78,59 @@ a:link {
 .card-content > * {
     text-decoration: none;
     color: rgb(32, 31, 31);
-    font-size: 7vmin;
+    font-size: 5vmin;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vmin;
+}
+
+.card-content > * {
+    padding: 0;
+    margin: 0;
+}
+
+.card-title {
+    color: black;
+}
+
+/* SHOW/ DETAIL PAGE */
+
+
+a:link {
+    text-decoration: none;
+}
+
+.card-detail {
+    background-color: lightslategray;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1vmin;
+    margin-bottom: 1vmin;
+    text-decoration: none;
+}
+
+.card-content-detail > * {
+    text-decoration: none;
+    color: rgb(32, 31, 31);
+    font-size: 5vmin;
+}
+
+.card-content-detail {
+    display: flex;
+    flex-direction: column;
+    padding: 1vmin;
+    gap: 2vmin;
+}
+
+.card-content-detail > * {
+    padding: 0;
+    margin: 0;
+}
+
+.card-title-detail {
+    color: black;
 }

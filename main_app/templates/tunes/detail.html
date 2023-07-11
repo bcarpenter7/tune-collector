@@ -4,9 +4,10 @@
 <h2>Detail Page</h2>
 
 <a href="/tunes/{{ tune.id }}">
-  <div class="card">
-    <div class="card-content">
-      <span class="card-title">Name {{ tune.name }}</span>
+  <div class="card-detail">
+    <div class="card-content-detail">
+      <span class="card-title-detail">Name {{ tune.name }}</span>
+      <hr>
       <p>Key: {{ tune.key }}</p>
       <p>Fiddler: {{ tune.fiddler }}</p>
       <p>Notes: {{ tune.description }}</p>
