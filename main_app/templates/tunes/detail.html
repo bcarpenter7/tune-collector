@@ -11,14 +11,15 @@
       <p>Key: {{ tune.key }}</p>
       <p>Fiddler: {{ tune.fiddler }}</p>
       <p>Notes: {{ tune.description }}</p>
-
+    </div>
+  </a>
+    <div class="card-action">
+      <a href="{% url 'tunes_update' tune.id %}">Edit</a>
+      <a href="{% url 'tunes_delete' tune.id %}">Delete</a>
     </div>
   </div>
-  <div class="card-action">
-    <a href="{% url 'tunes_update' tune.id %}">Edit</a>
-    <a href="{% url 'tunes_delete' tune.id %}">Delete</a>
-  </div>
-</a>
+  
+
 
 
 {% endblock %}
